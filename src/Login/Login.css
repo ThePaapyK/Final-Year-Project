@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: url('../assets/mammo_login.jpeg') no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.App-login{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  box-shadow: 0 0 10px pink;
+  backdrop-filter: blur(30px);
+  color: #ffffff;
+  border-radius: 17px;
+  padding: 30px 40px;
+}
+
+.App-login .h-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+
+.h-logo h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.h-logo .logo {
+  font-size: 50px;
+  animation: App-logo-spin linear 20s infinite;
+  color: #d73953;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 99%;
+  height:100%;
+  background: transparent;
+  border: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  outline: none;
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.input-box input::placeholder {
+  color: #ffffff;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 16px;
+  transform: translateY(-50%);
+} 
+
+.App-login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #ffffff;
+  margin-right: 4px;
+}
+
+.remember-forgot a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.App-login button {
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px pink;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 700;
+  border: none;
+}
+
+.App-login .register {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.App-login .register .reg {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.App-login .register p .reg:hover {
+  text-decoration: underline;
+}

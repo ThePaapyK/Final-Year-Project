@@ -1,0 +1,72 @@
+.App-footer {
+  background-color: rgb(5 5 50);
+  color: #ffffff;
+  position: relative;
+  padding: 25px 40px 25px 40px;
+}
+.App-foo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-foo blockquote {
+  width: 40%;
+  text-align:  left;
+  margin: 0;
+}
+
+.App-foo blockquote p {
+  margin: 0;
+}
+
+.App-foo blockquote h1 {
+  margin: 0;
+  color: #d73953;
+}
+
+.App-foo ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 1em;
+  height: 25px;
+  margin: 0;
+}
+
+.socimg {
+  color: #ffffff;
+  height: 25px;
+  width: 25px;
+  text-decoration: none;
+}
+
+hr {
+ color: #ffffff;
+ width: 100%;
+ background: #ffffff;
+ position: relative;
+ }
+
+.copy {
+  font-size: 12px;
+  text-align: left;
+ }
+
+.policies  {
+display: flex;
+justify-content: space-between;
+}
+
+.poli {
+  display: flex;
+  gap: 5px;
+}
+
+.poli a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.poli a:hover {
+  text-decoration: underline;
+}

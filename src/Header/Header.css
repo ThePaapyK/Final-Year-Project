@@ -1,0 +1,61 @@
+.title {
+  min-width: 15%;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  }
+.title p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#d73953;
+  }
+
+.App-logo {
+  height: 50px;
+  width: 50px;
+  pointer-events: none;
+  color: #d73953;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.App-logo {
+    animation: App-logo-spin 10s linear infinite;
+}
+
+  @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(px + 2vmin);
+  color: black;
+  flex-wrap: wrap;
+}
+
+.Vitals {
+  display: flex;
+  flex-direction: row;
+  margin-right:25px;
+  gap: 12px;
+}
+.Vitals a {
+  text-decoration: none;
+  color: black;
+}
+
+.Vitals a:hover {
+  text-decoration: underline;
+}
