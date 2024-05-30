@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { FaUser, FaLock } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 
 export default function Login() {
+  useEffect(() => {
+    document.title = "Login";
+  }, []);
   return (
     <section className="page">
       <div className="App-login">

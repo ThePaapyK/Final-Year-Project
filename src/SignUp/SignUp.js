@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SignUp.css';
 import { Link } from 'react-router-dom';
 import { FaUser, FaLock } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 
 export default function SignUp() {
+  useEffect(() => {
+    document.title = "SignUp";
+  }, []);
   return (
     <section className="page">
       <div className="App-signup">
