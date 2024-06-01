@@ -25,44 +25,45 @@ export default function Profile() {
             to="/profile/dashboard" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
-            <FaChartPie /> Dashboard
+            <FaChartPie className="icons"/> Dashboard
           </NavLink>
           <NavLink
 	    to="/profile/calendar"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <FaRegCalendarAlt /> Calendar
+	    <FaRegCalendarAlt className="icons"/> Calendar
 	  </NavLink>
 	  <NavLink
 	    to="/profile/analyse"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <LuMicroscope /> Analyse Mammogram
+	    <LuMicroscope className="icons"/> Analyse Mammogram
 	  </NavLink>
           <NavLink
 	    to="/profile/messages"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <AiOutlineMessage /> Messages
+	    <AiOutlineMessage className="icons"/> Messages
 	  </NavLink>
           <NavLink
 	    to="/profile/patients"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <IoPeopleOutline /> Patients
+	    <IoPeopleOutline className="icons"/> Patients
 	  </NavLink>
           <NavLink
 	    to="/profile/prescription"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <LuPencilLine /> Prescription
+	    <LuPencilLine className="icons"/> Prescription
 	  </NavLink>
           <NavLink
 	    to="/profile/settings"
 	    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 	  >
-	    <GoGear /> Settings
+	    <GoGear className="icons"/> Settings
 	  </NavLink>
+	  <button className="logout"><IoExitOutline className="icons"/> Log out</button>
         </aside>
 	<main className="content">
           <Outlet />

@@ -7,7 +7,6 @@ export default function Patients() {
     <>
       <div className="m-item input-d">
             <div className="new-pati">
-              <h1>Dashboard</h1>
               <h3>New Patient? Enter Patient Details Here</h3>
               <form action="">
                 <div className="p-name">

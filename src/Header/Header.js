@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { FaReact } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -11,11 +11,18 @@ export default function Header() {
          <p>MammoAI</p>
        </section>
        <div className="Vitals">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-	<Link to="/signup">Sign Up</Link>
-	<Link to="/login">Login</Link>
+        <NavLink to="/home"
+	  className={({ isActive }) => isActive ? 'nhav-link active' : 'nhav-link'}
+	>Home
+	</NavLink>
+        <NavLink to="/about"
+	  className={({ isActive }) => isActive ? 'nhav-link active' : 'nhav-link'}
+	>About
+	</NavLink>
+        <NavLink to="/contact"
+          className={({ isActive }) => isActive ? 'nhav-link active' : 'nhav-link'}
+	>Contact
+	</NavLink>
        </div>
     </div>
   );

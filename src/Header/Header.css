@@ -42,7 +42,6 @@
   justify-content: space-between;
   font-size: calc(px + 2vmin);
   color: black;
-  flex-wrap: wrap;
 }
 
 .Vitals {
@@ -51,11 +50,19 @@
   margin-right:25px;
   gap: 12px;
 }
-.Vitals a {
+.Vitals .nhav-link {
   text-decoration: none;
-  color: black;
+  color: grey;
+  padding: 5px 12px 7px 12px;
+  border-radius: 7px;
 }
 
-.Vitals a:hover {
-  text-decoration: underline;
+.Vitals .nhav-link:hover {
+  background: rgb(255, 106, 106, 0.05);
+  color: #d73953;
+}
+
+.nhav-link.active {
+  background: rgb(255, 106, 106, 0.05);
+  color: #d73953;
 }

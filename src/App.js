@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import Home from './Home/Home';
+import HomeInfo from './Home/homeInfo';
+import About from './About/About';
+import Contact from './Contact/Contact';
 import Login from './Login/Login';
 import SignUp from './SignUp/SignUp';
 import Profile from './Profile/Profile';
@@ -18,7 +21,12 @@ function App() {
     <div className="App">
       <Router>
 	<Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} >
+	    <Route index element={<Navigate to="home" />} />
+	    <Route path='home' element={<HomeInfo />} />
+	    <Route path='about' element={<About />} />
+	    <Route path='contact' element={<Contact />} />
+	  </Route>
           <Route path='login' element={<Login />} />
 	  <Route path='signup' element={<SignUp />} />
 	  <Route path='profile' element={<Profile />}>

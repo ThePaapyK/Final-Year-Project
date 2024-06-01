@@ -4,52 +4,75 @@
 
 .App-profile .sidebar {
   width: 270px;
-  background-color: rgb(255, 106, 106);
+  background-color: rgb(255, 106, 106, 0.2);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: black;
+  min-height: 100vh;
 }
 
 .prof-pic {
   border-radius: 50%;
   border: 3px solid #ffffff;
   margin-bottom: 2px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .prof-info {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .prof-info h4, p {
   margin: 0;
  }
+
+.prof-info p {
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+}
+
 .sidebar .nav-link {
   text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px 15px 10px 15px;
+  /*display: block;*/
+  margin-bottom: 3px;
+  padding: 8px 15px 8px 15px;
   border: none;
-  background-color: inherit;
-  color: white;
+  background-color: rgb(255, 106, 106, 0.04);
+  color: black;
   cursor: pointer;
   text-align: left;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   font-size: 17px;
 }
 
 .sidebar .nav-link:hover {
-  background-color: #d73953;
+  background-color: rgb(249, 249, 249);
 }
 
 .nav-link.active {
-  background-color: #d73953;
+  background-color: rgb(249, 249, 249); /*#d73953;*/
+  border-left: 5px solid #d73953;
+}
+
+.icons {
+ color: #d73953;
+}
+
+.logout {
+ margin-top: auto;
+ text-decoration: none;
+ background-color: rgb(255, 106, 106, 0.04);
+ font-size: 17px;
+ border: none;
+ text-align: left;
+ cursor: pointer;
+ padding-left: 15px
 }
 
 .content {
   flex-grow: 1;
   padding: 20px;
-  background-color: #ffffff;
   background-color: rgb(249, 249, 249);
 }

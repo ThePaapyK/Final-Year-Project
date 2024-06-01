@@ -44,6 +44,7 @@
   border: none;
   border-radius: 10px;
   padding-left: 30px;
+  box-shadow: 3px 3px 3px pink;
 }
 
 .search-icon {
