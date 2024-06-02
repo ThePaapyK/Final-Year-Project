@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Analyse.css';
 
 export default function Analyse() {
+  useEffect(() => {
+    document.title = "Analyse";
+  }, []);
+
   return (
     <>
       <div className="m-item submit-mammo">

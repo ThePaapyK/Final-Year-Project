@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './home-info.css';
 import { PiStarFourFill } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 
 export default function HomeInfo() {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <>
       <div className="home-page">

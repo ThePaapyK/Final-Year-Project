@@ -10,9 +10,9 @@ export default function Footer() {
      <div className="App-foo">
       <blockquote>
         <h1>MammoAI</h1>
-        <p>Room 205</p>
-        <p>Caesar Building</p>
-        <p>Kwame Nkrumah University of Science and Technology</p>
+        <p>Fifth Floor</p>
+        <p>Fobistems Corp.</p>
+        <p>Effah-Annan street, Takoradi, Ghana</p>
       </blockquote>
       <ul>
         <li className="social-item">

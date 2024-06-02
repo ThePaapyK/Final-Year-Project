@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Patients.css';
 import { FaSearch } from "react-icons/fa";
 
 export default function Patients() {
+  useEffect(() => {
+    document.title = "Patients";
+  }, []);
+
   return (
     <>
       <div className="m-item input-d">

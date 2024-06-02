@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Home.css';
@@ -7,6 +7,10 @@ import { GiArtificialIntelligence } from "react-icons/gi";
 import { NavLink, Outlet } from 'react-router-dom';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <>
       <div className="App-body">
