@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './SignUp.css';
+import robot from '../assets/ai_robot_hand.png';
 import { Link } from 'react-router-dom';
 import { FaUser, FaLock } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
@@ -9,12 +10,22 @@ export default function SignUp() {
     document.title = "SignUp";
   }, []);
   return (
-    <section className="page">
+    <div className="signup-page">
+      <div className="signup-display">
+	  <div className="disp-container">
+	    <img src={ robot } alt="ai robot hand" />
+	    <div class="text-overlay">
+	      <p className="d-title">MammoAI</p>
+	      <p>Breast Cancer Screening</p>
+	      <p>Now AI Powered!</p>
+	    </div>
+	  </div>
+      </div>
       <div className="App-signup">
         <form action="">
 	  <div className="h-logo">
-	   <h1>MammoAI</h1>
 	   <FaReact className="logo" />
+	   <p>Sign Up</p>
 	  </div>
 	  <div className="Name">
 	   <div className="input-box">
@@ -60,6 +71,6 @@ export default function SignUp() {
 	  <Link className="login" to="/login">Already have an account?</Link>
         </form>
       </div>
-    </section>
+    </div>
   );
 };

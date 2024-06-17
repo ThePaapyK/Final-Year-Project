@@ -4,7 +4,7 @@
 
 .App-profile .sidebar {
   width: 270px;
-  background-color: rgb(255, 106, 106, 0.2);
+  background-color: rgb(255, 225, 225);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
   margin-bottom: 3px;
   padding: 8px 15px 8px 15px;
   border: none;
-  background-color: rgb(255, 106, 106, 0.04);
+  background-color: rgb(255, 225, 225);
   color: black;
   cursor: pointer;
   text-align: left;
@@ -63,7 +63,7 @@
 .logout {
  margin-top: auto;
  text-decoration: none;
- background-color: rgb(255, 106, 106, 0.04);
+ background-color: rgb(255, 225, 225);
  font-size: 17px;
  border: none;
  text-align: left;
