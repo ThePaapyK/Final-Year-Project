@@ -12,16 +12,20 @@ export default function DashBoard() {
   return (
     <>
       <div className="dash">
-        <h3>Dashboard</h3>
-	<div className="top">
-	  <div className="date"> <FaRegCalendarAlt className="ico" /> <span>{ getFormattedDate() }</span></div>
-	  <div className="time"><FaRegClock className="ico" /> <span>{ getFormattedTime() }</span></div>
-	   <div className="search-bar">
+	<div className="Top-items">
+          <h3>Dashboard</h3>
+	  <div className="top">
+	    <div className="date"> <FaRegCalendarAlt className="ico" /> <span>{ getFormattedDate() }</span></div>
+	    <div className="time"><FaRegClock className="ico" /> <span>{ getFormattedTime() }</span></div>
+	    <div className="search-bar">
 	      <LuSearch className="search-icon"/>
               <input type="text" placeholder="Search for..." />
-	   </div>
-	</div>
-     </div>
+	    </div>
+          </div>
+        </div>
+	<div className="lower-items">
+	</div
+      </div>
     </>
   );
 };

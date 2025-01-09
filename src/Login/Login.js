@@ -1,14 +1,45 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { jwtDecode } from 'jwt-decode';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaLock } from "react-icons/fa";
-import { FaReact } from "react-icons/fa6";
 import logo from '../assets/Logobc.png';
 
 export default function Login() {
   useEffect(() => {
     document.title = "Login";
   }, []);
+
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
+  const { email, password } = formData;
+  const navigate = useNavigate();
+
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const user = { email, password };
+    try {
+      const res = await axios.post('http://localhost:5000/api/auth/login', user, { withCredentials: true });
+      console.log(res.data);
+      if (res.data.msg === 'Login successful') {
+        navigate('/profile');
+      }
+      else {
+        navigate('/login');
+      }
+    } catch (err) {
+      console.error(err.response);
+    }
+  };
+
   return (
     <div className="login-page">
       <div className="illus">
@@ -20,18 +51,18 @@ export default function Login() {
 	</div>
       </div>
       <div className="App-login">
-        <form action="">
+        <form onSubmit={onSubmit}>
 	  <img src={logo} className="logo" alt="logo" />
 	   <p className="login-h">Login</p>
 	   <p className="login-p">Log in to your account</p>
 	   <div className="input-box">
 	      <p>Email</p>
-	      <input type="email" id="email" placeholder="Enter your emial" required />
+	      <input type="email" name="email" value={email} id="email" placeholder="Enter your emial" onChange={onChange} required />
 	      <FaUser className="icon"/>
 	   </div>
 	   <div className="input-box">
 	      <p>Password</p>
-              <input type="password" id="password" placeholder="Enter your password" required />
+              <input type="password" name="password" value={password} id="password" placeholder="Enter your password" onChange={onChange} required />
 	      <FaLock className="icon"/>
            </div>
 	   <div className="remember-forgot">

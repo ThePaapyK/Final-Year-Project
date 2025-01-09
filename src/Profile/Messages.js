@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Settings.css';
+import './Messages.css';
 
 export default function Messages() {
   useEffect(() => {
