@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Home.css';
-import cover from '../assets/sethoscope.jpg';
-import { GiArtificialIntelligence } from "react-icons/gi";
 import { NavLink, Outlet } from 'react-router-dom';
 
 export default function Home() {

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Home from './Home/Home';
 import HomeInfo from './Home/homeInfo';
 import About from './About/About';
@@ -10,10 +9,11 @@ import DashBoard from './Profile/DashBoard';
 import Patients from './Profile/Patients';
 import Analyse from './Profile/Analyse';
 import Calendar from './Profile/Calendar';
-import Settings from './Profile/Settings';
+import Settings from './Profile/Settings/Settings';
 import Messages from './Profile/Messages';
 import Prescription from './Profile/Prescription';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import PrivateRoute from './Profile/PrivateRoute';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
 	  </Route>
           <Route path='login' element={<Login />} />
 	  <Route path='signup' element={<SignUp />} />
-	  <Route path='profile' element={<Profile />}>
+	  <Route path='profile' element={<PrivateRoute element={Profile}/>} >
 	    <Route index element={<Navigate to="dashboard" />} />
 	    <Route path="dashboard" element={<DashBoard />} />
             <Route path="calendar" element={<Calendar />} />

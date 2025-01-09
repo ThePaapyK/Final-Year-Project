@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import './About.css';
-import { Link } from 'react-router-dom';
 
 export default function About() {
   useEffect(() => {
