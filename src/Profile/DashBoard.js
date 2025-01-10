@@ -24,8 +24,8 @@ export default function DashBoard() {
           </div>
         </div>
 	<div className="lower-items">
-	</div
-      </div>
+	</div>
+  </div>
     </>
   );
 };
